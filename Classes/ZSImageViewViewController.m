@@ -45,6 +45,17 @@
 	imageView.cornerRadius = 15;
 	[self.view addSubview:imageView];
 	
+	// Create the image view
+	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(200, 400, 100.0f, 100.0f)] autorelease];
+	imageView2.imageUrl = @"http://www.pctrs.com/uploads/hill-top-mountain-sky-free_wallpapers.jpg";
+	imageView2.defaultImage = [UIImage imageNamed:@"no-image.png"];
+	imageView2.topLeft = YES;
+	imageView2.topRight = YES;
+	imageView2.bottomLeft = YES;
+	imageView2.bottomRight = YES;
+	imageView2.cornerRadius = 10;
+	[self.view addSubview:imageView2];
+	
 }//end
 
 
