@@ -230,8 +230,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,8 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>2</integer>
+									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -314,12 +311,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZSImageView.h</string>
+								<string>ZSImageViewViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,21 +326,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ZSImageView.h</string>
+										<string>ZSImageViewViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>45D1E1E013FD858600A22477</string>
+										<string>45D1E20A13FD8B8C00A22477</string>
 										<key>history</key>
 										<array>
 											<string>45F9C8F913FB39040087322F</string>
 											<string>45F9C8FC13FB39040087322F</string>
 											<string>45DAB4E413FC5EAD0073339F</string>
-											<string>45D1E1DB13FD858600A22477</string>
 											<string>45D1E1DC13FD858600A22477</string>
 											<string>45D1E1DD13FD858600A22477</string>
 											<string>45D1E1DE13FD858600A22477</string>
-											<string>45D1E1DF13FD858600A22477</string>
+											<string>45D1E1FF13FD89E800A22477</string>
+											<string>45D1E1DB13FD858600A22477</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -399,9 +398,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>45D1E1E113FD858600A22477</string>
+				<string>45D1E1F213FD894600A22477</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>45D1E1E213FD858600A22477</string>
+				<string>45D1E1F313FD894600A22477</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -542,7 +541,7 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>45F9C8EE13FB38860087322F</string>
-		<string>/Users/webmaster/Desktop/ZSImageView/ZSImageView.xcodeproj</string>
+		<string>/Users/webmaster/Dropbox/iPhone-Development/Official-Projects/ZSImageView/ZSImageView.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>54 63 1863 1115 0 0 1920 1178 </string>
@@ -622,7 +621,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>45F9C8EE13FB38860087322F</string>
-				<string>45D1E1E313FD858600A22477</string>
+				<string>45D1E1F413FD894600A22477</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -666,8 +665,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 198}}</string>
-											<string>{{316, 0}, {378, 198}}</string>
+											<string>{{0, 0}, {316, 201}}</string>
+											<string>{{316, 0}, {378, 201}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -682,8 +681,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 198}}</string>
-											<string>{{0, 198}, {694, 183}}</string>
+											<string>{{0, 0}, {694, 201}}</string>
+											<string>{{0, 201}, {694, 180}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -716,7 +715,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 198}}</string>
+									<string>{{316, 0}, {378, 201}}</string>
 									<key>RubberWindowFrame</key>
 									<string>74 733 694 422 0 0 1920 1178 </string>
 								</dict>
@@ -744,13 +743,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>45D1E1E413FD858600A22477</string>
+				<string>45D1E20113FD89E800A22477</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>45D1E1E513FD858600A22477</string>
-				<string>45D1E1E613FD858600A22477</string>
-				<string>45D1E1E713FD858600A22477</string>
-				<string>45D1E1E813FD858600A22477</string>
-				<string>45D1E1E913FD858600A22477</string>
+				<string>45D1E20213FD89E800A22477</string>
+				<string>45D1E20313FD89E800A22477</string>
+				<string>45D1E20413FD89E800A22477</string>
+				<string>45D1E20513FD89E800A22477</string>
+				<string>45D1E20613FD89E800A22477</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -912,7 +911,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>45D1E1EA13FD858600A22477</string>
+				<string>45D1E20713FD89E800A22477</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

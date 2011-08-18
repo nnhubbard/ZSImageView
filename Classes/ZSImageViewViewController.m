@@ -38,10 +38,7 @@
 	
 	// Create the image view
 	ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 100, 200.0f, 200.0f)] autorelease];
-	imageView.contentMode = UIViewContentModeScaleAspectFill;
-	imageView.clipsToBounds = YES;
-	imageView.backgroundColor = [UIColor clearColor];
-	imageView.imageUrl = @"http://thundafunda.com/DESKTOPS/plog-content/images/nature/mountains/annapurna-ii-_7937m_-from-ghyaru-marsyangdi-vall.jpg";
+	imageView.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
 	imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
 	imageView.topLeft = YES;
 	imageView.bottomLeft = YES;
@@ -49,7 +46,6 @@
 	[self.view addSubview:imageView];
 	
 }//end
-
 
 
 // Override to allow orientations other than the default portrait orientation.
