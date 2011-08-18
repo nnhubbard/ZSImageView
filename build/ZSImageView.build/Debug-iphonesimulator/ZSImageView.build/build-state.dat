@@ -1,0 +1,382 @@
+TZSImageView
+v7
+r0
+t335381794.265932
+cCheck dependencies
+cProcessInfoPlistFile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/Info.plist ZSImageView-Info.plist
+cCompileXIB /Users/webmaster/Desktop/ZSImageView/MainWindow.xib
+cCompileXIB /Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib
+cCpResource build/Debug-iphonesimulator/ZSImageView.app/no-image.png no-image.png
+cProcessPCH /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch.gch ZSImageView_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/main.o /Users/webmaster/Desktop/ZSImageView/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewAppDelegate.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewViewController.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/JMImageCache.o /Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView normal i386
+cGenerateDSYMFile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app.dSYM /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView
+cTouch /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D4200000000000162C50
+t1297404960
+s1453136
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.h
+c000000004E03A10E0000000000000313
+t1308860686
+s787
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m
+c000000004E03A1080000000000000D46
+t1308860680
+s3398
+i"JMImageCache.h"
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.h
+c000000004E4D4C9700000000000002EE
+t1313688727
+s750
+i<QuartzCore/QuartzCore.h>
+i"JMImageCache.h"
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m
+c000000004E4D4D93000000000000090B
+t1313688979
+s2315
+i"ZSImageView.h"
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.h
+c000000004E4B003500000000000001F9
+t1313538101
+s505
+i<UIKit/UIKit.h>
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m
+c000000004E4B00350000000000000821
+t1313538101
+s2081
+i"ZSImageViewAppDelegate.h"
+i"ZSImageViewViewController.h"
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.h
+c000000004E4B003500000000000000FC
+t1313538101
+s252
+i<UIKit/UIKit.h>
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m
+c000000004E4D4C2F00000000000007EF
+t1313688623
+s2031
+i"ZSImageViewViewController.h"
+i"ZSImageView.h"
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/untitled.h
+c000000004E4C267800000000000000D0
+t1313613432
+s208
+i<UIKit/UIKit.h>
+
+N/Users/webmaster/Desktop/ZSImageView/Classes/untitled.m
+c000000004E4C2678000000000000024E
+t1313613432
+s590
+i"untitled.h"
+
+N/Users/webmaster/Desktop/ZSImageView/MainWindow.xib
+c000000004E4B00350000000000004D31
+t1313538101
+s19761
+
+N/Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib
+c000000004E4B00350000000000003EF1
+t1313538101
+s16113
+
+N/Users/webmaster/Desktop/ZSImageView/ZSImageView_Prefix.pch
+c000000004E4B012600000000000000EA
+t1313538342
+s234
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app
+t1313688994
+s272
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app.dSYM
+t1313688994
+s102
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/Info.plist
+t1313685363
+s814
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/MainWindow.nib
+t1313538433
+s1690
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/PkgInfo
+t1313685363
+s8
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView
+t1313688994
+s33880
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageViewViewController.nib
+t1313538433
+s1232
+
+N/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/no-image.png
+t1313612460
+s4145
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/JMImageCache.o
+t1313538435
+s24100
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.LinkFileList
+c000000004E4B017E00000000000002B6
+t1313538430
+s694
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.o
+t1313688994
+s53856
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewAppDelegate.o
+t1313538435
+s50712
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewViewController.o
+t1313688783
+s43392
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/main.o
+t1313538435
+s6308
+
+N/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/untitled.o
+t2
+s0
+
+N/Users/webmaster/Desktop/ZSImageView/main.m
+c000000004E4B0035000000000000016F
+t1313538101
+s367
+i<UIKit/UIKit.h>
+
+N/Users/webmaster/Desktop/ZSImageView/no-image.png
+c000000004E4C22790000000000001031
+t1313612409
+s4145
+
+N/var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch.gch
+t1313538435
+s15814064
+
+N/var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-dkthydublkbqhrfrdzplraawugjd/ZSImageView_Prefix.pch.gch
+t1313538378
+s15814064
+
+NZSImageView-Info.plist
+c000000004E4B003500000000000004D6
+t1313538101
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies335381794#335381794#0(0"0(0#1#0"8629045408#0"0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/JMImageCache.o /Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s335231235.705628
+e335231235.846383
+r1
+xCompileC
+xbuild/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/JMImageCache.o
+x/Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m335231235#335231235#0(0"0(0#0#59"/Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m8674856320#1996"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -include /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch -c /Users/webmaster/Desktop/ZSImageView/Classes/JMImageCache.m -o /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/JMImageCache.o0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s335381794.068703
+e335381794.215867
+r1
+xCompileC
+xbuild/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.o
+x/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m335381794#335381794#0(0"0(0#0#58"/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m8626253888#1994"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -include /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch -c /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageView.m -o /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.o0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewAppDelegate.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s335231235.515833
+e335231235.619434
+r1
+xCompileC
+xbuild/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewAppDelegate.o
+x/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m335231235#335231235#0(0"0(0#0#69"/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m8695416064#2016"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -include /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch -c /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewAppDelegate.m -o /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewAppDelegate.o0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewViewController.o /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s335381583.538428
+e335381583.649798
+r1
+xCompileC
+xbuild/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewViewController.o
+x/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m335381583#335381583#0(0"0(0#0#72"/Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m8629471616#2022"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -include /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch -c /Users/webmaster/Desktop/ZSImageView/Classes/ZSImageViewViewController.m -o /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageViewViewController.o0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/main.o /Users/webmaster/Desktop/ZSImageView/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s335231235.502564
+e335231235.618371
+r1
+xCompileC
+xbuild/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/main.o
+x/Users/webmaster/Desktop/ZSImageView/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/webmaster/Desktop/ZSImageView/main.m335231235#335231235#0(0"0(0#0#43"/Users/webmaster/Desktop/ZSImageView/main.m8617998240#1972"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -include /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch -c /Users/webmaster/Desktop/ZSImageView/main.m -o /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/main.o0#
+
+CCompileC build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/untitled.o /Users/webmaster/Desktop/ZSImageView/Classes/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/webmaster/Desktop/ZSImageView/MainWindow.xib
+s335231230.756615
+e335231233.938680
+r1
+xCompileXIB
+x/Users/webmaster/Desktop/ZSImageView/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib335231230#335231233#0(0"0(0#0#51"/Users/webmaster/Desktop/ZSImageView/MainWindow.xib8699275104#568"    cd /Users/webmaster/Desktop/ZSImageView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/MainWindow.nib /Users/webmaster/Desktop/ZSImageView/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib
+s335231230.757309
+e335231233.894769
+r1
+xCompileXIB
+x/Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib
+lSLF07#2@40"CompileXIB ZSImageViewViewController.xib335231230#335231233#0(0"0(0#0#66"/Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib8692593152#598"    cd /Users/webmaster/Desktop/ZSImageView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageViewViewController.nib /Users/webmaster/Desktop/ZSImageView/ZSImageViewViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource build/Debug-iphonesimulator/ZSImageView.app/no-image.png no-image.png
+s335305260.819193
+e335305260.912592
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ZSImageView.app/no-image.png
+xno-image.png
+lSLF07#2@17"Copy no-image.png335305260#335305260#0(0"0(0#0#49"/Users/webmaster/Desktop/ZSImageView/no-image.png32651513917341812#468"    cd /Users/webmaster/Desktop/ZSImageView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/webmaster/Desktop/ZSImageView/no-image.png /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app0#
+
+CGenerateDSYMFile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app.dSYM /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView
+s335381794.245743
+e335381794.263624
+r1
+xGenerateDSYMFile
+x/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app.dSYM
+x/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/ZSImageView.app.dSYM build/Debug-iphonesimulator/ZSImageView.app/ZSImageView335381794#335381794#0(0"0(0#0#92"/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView8626577984#389"    cd /Users/webmaster/Desktop/ZSImageView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView -o /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app.dSYM0#
+
+CLd /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView normal i386
+s335381794.215952
+e335381794.245659
+r1
+xLd
+x/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView
+xnormal
+xi386
+lSLF07#2@97"Link /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView335381794#335381794#0(0"0(0#0#0"8629052128#932"    cd /Users/webmaster/Desktop/ZSImageView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -filelist /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/Objects-normal/i386/ZSImageView.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -o /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/ZSImageView0#
+
+CProcessInfoPlistFile /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/Info.plist ZSImageView-Info.plist
+s335378163.799037
+e335378163.972869
+r1
+xProcessInfoPlistFile
+x/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/Info.plist
+xZSImageView-Info.plist
+lSLF07#2@30"Process ZSImageView-Info.plist335378163#335378163#0(0"0(0#0#59"/Users/webmaster/Desktop/ZSImageView/ZSImageView-Info.plist28429445101453416#485"    cd /Users/webmaster/Desktop/ZSImageView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ZSImageView-Info.plist -genpkginfo /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app/Info.plist0#
+
+CProcessPCH /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch.gch ZSImageView_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s335231233.938781
+e335231235.502455
+r1
+xProcessPCH
+x/var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch.gch
+xZSImageView_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile ZSImageView_Prefix.pch335231233#335231235#0(0"0(0#0#59"/Users/webmaster/Desktop/ZSImageView/ZSImageView_Prefix.pch8680690528#1862"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -c /Users/webmaster/Desktop/ZSImageView/ZSImageView_Prefix.pch -o /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-akrzcntvehfxgcavsxjuuogwaica/ZSImageView_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-dkthydublkbqhrfrdzplraawugjd/ZSImageView_Prefix.pch.gch ZSImageView_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s335231177.214833
+e335231178.106259
+r1
+xProcessPCH
+x/var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-dkthydublkbqhrfrdzplraawugjd/ZSImageView_Prefix.pch.gch
+xZSImageView_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile ZSImageView_Prefix.pch335231177#335231178#0(0"0(0#0#59"/Users/webmaster/Desktop/ZSImageView/ZSImageView_Prefix.pch8636764096#1862"    cd /Users/webmaster/Desktop/ZSImageView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-generated-files.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-own-target-headers.hmap -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-all-target-headers.hmap -iquote /Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/ZSImageView-project-headers.hmap -F/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator -I/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/include -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources/i386 -I/Users/webmaster/Desktop/ZSImageView/build/ZSImageView.build/Debug-iphonesimulator/ZSImageView.build/DerivedSources -c /Users/webmaster/Desktop/ZSImageView/ZSImageView_Prefix.pch -o /var/folders/zq/zq2T9B5XE0mUt+kezx6Suk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZSImageView_Prefix-dkthydublkbqhrfrdzplraawugjd/ZSImageView_Prefix.pch.gch0#
+
+CTouch /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app
+s335381794.263691
+e335381794.265909
+r1
+xTouch
+x/Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app
+lSLF07#2@86"Touch /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app335381794#335381794#0(0"0(0#0#0"8626563328#278"    cd /Users/webmaster/Desktop/ZSImageView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/webmaster/Desktop/ZSImageView/build/Debug-iphonesimulator/ZSImageView.app0#
+
