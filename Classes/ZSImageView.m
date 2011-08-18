@@ -31,6 +31,20 @@
 }//end
 
 
+/**
+ * Set imageUrl
+ *
+ * @version $Revision: 0.1
+ */
+- (void)setImageUrl:(NSString *)url {
+	[imageUrl release];
+	imageUrl = [url retain];
+	
+	[self setNeedsDisplay];
+	
+}//end
+
+
 #pragma mark -
 #pragma mark Drawing
 
@@ -105,8 +119,12 @@
  * @version $Revision: 0.1
  */
 - (void)cache:(JMImageCache *)cache didDownloadImage:(UIImage *)img forURL:(NSString *)url {
-	self.image = img;
-	[self setNeedsDisplay];
+	if ([url isEqualToString:imageUrl]) {
+		
+		self.image = image;
+		[self setNeedsDisplay];
+	}
+	
 }//end
 
 
@@ -119,9 +137,9 @@
  * @version $Revision: 0.1
  */
 - (void)dealloc {
-	ZSRelease(imageUrl);
-	ZSRelease(defaultImage);
-	ZSRelease(image);
+	[imageUrl release];
+	[defaultImage release];
+	[image release];
     [super dealloc];
 }//end
 
