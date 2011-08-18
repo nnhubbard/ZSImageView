@@ -100,12 +100,17 @@
 		self.cornerRadius = 10;
 	}
 	
-	// Create the mask
-	UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
-	CAShapeLayer *maskLayer = [CAShapeLayer layer];
-	maskLayer.frame = self.bounds;
-	maskLayer.path = maskPath.CGPath;
-	self.layer.mask = maskLayer;
+	// Make sure we even have corners to change
+	if (corners != 0) {
+		// Create the mask
+		UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+		CAShapeLayer *maskLayer = [CAShapeLayer layer];
+		maskLayer.frame = self.bounds;
+		maskLayer.path = maskPath.CGPath;
+		self.layer.mask = maskLayer;
+	} else {
+		self.layer.mask = nil;
+	}//end
 	
 }//end
 
