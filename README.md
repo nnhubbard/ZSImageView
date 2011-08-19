@@ -33,7 +33,7 @@ How to use in your App
 ---
 `ZSImageView` requires the `QuartzCore.framework`. Once you have that added you need to copy `ZSImageView.h` and 
 `ZSImageView.m` as well as `JMImageCache.h` and `JMImageCache.m` to your project. Then `#import` the `ZSImageView.h`
-header file when you need it and start using it.
+header file where you need it and start using it.
 
 Notes
 ---
