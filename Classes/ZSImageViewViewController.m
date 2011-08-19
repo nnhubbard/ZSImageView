@@ -37,17 +37,18 @@
 	[super viewDidLoad];
 	
 	// Create the image view
-	ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 100, 200.0f, 200.0f)] autorelease];
-	imageView.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
+	ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 100, 200.0f, 500.0f)] autorelease];
+	imageView.imageUrl = @"http://farm7.static.flickr.com/6067/6059587693_9c39728932_b.jpg";
 	imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
+	imageView.contentMode = UIViewContentModeScaleAspectFill;
 	imageView.topLeft = YES;
 	imageView.bottomLeft = YES;
 	imageView.cornerRadius = 15;
 	[self.view addSubview:imageView];
 	
 	// Create the image view
-	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(200, 400, 100.0f, 100.0f)] autorelease];
-	imageView2.imageUrl = @"http://www.pctrs.com/uploads/hill-top-mountain-sky-free_wallpapers.jpg";
+	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(600, 400, 100.0f, 100.0f)] autorelease];
+	imageView2.imageUrl = @"http://farm7.static.flickr.com/6070/6059589377_48cce910c6_b.jpg";
 	imageView2.defaultImage = [UIImage imageNamed:@"no-image.png"];
 	imageView2.topLeft = YES;
 	imageView2.topRight = YES;

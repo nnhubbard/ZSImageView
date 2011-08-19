@@ -10,7 +10,7 @@
 
 @implementation ZSImageView
 
-@synthesize imageUrl, defaultImage, topLeft, topRight, bottomLeft, bottomRight, image, cornerRadius;
+@synthesize imageUrl, defaultImage, topLeft, topRight, bottomLeft, bottomRight, image, cornerRadius, imageView;
 
 #pragma mark -
 #pragma mark Initialization
@@ -54,23 +54,42 @@
  * @version $Revision: 0.1
  */
 - (void)drawRect:(CGRect)rect {
-    // Drawing code.
+    
+	// Can we continue?
+	if (!imageUrl && !defaultImage) {
+		return;
+	}
 	
-	// Set the image view
-	UIImage *temp = [[JMImageCache sharedCache] imageForURL:imageUrl delegate:self];
+	// Draw ImageView
+	UIImageView *tmp = [[UIImageView alloc] initWithFrame:rect];
 	
-	// See if we recieved an image yet, if not use default
-	if (temp) {
-		self.image = temp;
+	// Make sure we have a remote url
+	if (imageUrl && [imageUrl length] > 0) {
+		
+		// Set the image view
+		UIImage *temp = [[JMImageCache sharedCache] imageForURL:imageUrl delegate:self];
+		
+		// See if we recieved an image yet, if not use default
+		if (temp) {
+			tmp.image = temp;
+		} else {
+			
+			if (defaultImage) {
+				tmp.image = defaultImage;
+			} else {
+				tmp.image = nil;
+			}//end
+
+		}//end
+		
 	} else {
-		self.image = defaultImage;
+		tmp.image = defaultImage;
 	}//end
 	
-	// Round the edges
-	self.image = image;
-	
-	// Draw the image
-	[image drawInRect:rect];
+	tmp.contentMode = self.contentMode;
+	self.imageView = tmp;
+	[tmp release];
+	[self addSubview:imageView];
 	
 	// -- Round the view --
 	UIRectCorner corners = 0;
@@ -125,8 +144,7 @@
  */
 - (void)cache:(JMImageCache *)cache didDownloadImage:(UIImage *)img forURL:(NSString *)url {
 	if ([url isEqualToString:imageUrl]) {
-		
-		self.image = image;
+		self.imageView.image = img;
 		[self setNeedsDisplay];
 	}
 	
@@ -145,6 +163,7 @@
 	[imageUrl release];
 	[defaultImage release];
 	[image release];
+	[imageView release];
     [super dealloc];
 }//end
 

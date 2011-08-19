@@ -12,6 +12,7 @@
 	NSString *imageUrl;
 	UIImage *image;
 	UIImage *defaultImage;
+	UIImageView *imageView;
 	BOOL topLeft;
 	BOOL topRight;
 	BOOL bottomLeft;
@@ -22,6 +23,7 @@
 @property (nonatomic, retain) NSString *imageUrl;
 @property (nonatomic, retain) UIImage *image;
 @property (nonatomic, retain) UIImage *defaultImage;
+@property (nonatomic, retain) UIImageView *imageView;
 @property (nonatomic) BOOL topLeft;
 @property (nonatomic) BOOL topRight;
 @property (nonatomic) BOOL bottomLeft;
