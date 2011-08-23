@@ -18,7 +18,7 @@ imageView.contentMode = UIViewContentModeScaleAspectFill;
 [self.view addSubview:imageView];
 ```
 
-If you want to round two of the edges and give the view a cornerRadius of 10 it is pretty easy:
+If you want to round three of the edges and give the view a cornerRadius of 10 it is pretty easy:
 
 ```objective-c
 ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 200.0f)] autorelease];
