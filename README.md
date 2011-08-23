@@ -31,7 +31,7 @@ imageView2.cornerRadius = 10;
 
 Options to Round Edges
 ---
-There are five options you can use to round the edges of your `ZSImageView`. `ZSRoundCornerTopLeft`, `ZSRoundCornerTopRight`, `ZSRoundCornerBottomLeft`, `ZSRoundCornerBottomRight`, `ZSRoundCornerAll`. These can be combined to round a few edges or you can use `ZSRoundCornerAll` to round all of the edges.
+There are five options you can use to round the edges of your `ZSImageView`. `ZSRoundCornerTopLeft`, `ZSRoundCornerTopRight`, `ZSRoundCornerBottomLeft`, `ZSRoundCornerBottomRight`, `ZSRoundCornerAll`. These can be combined to round a few edges or you can use `ZSRoundCornerAll` to round all of the edges. `ZSRoundCornerNone` is also available to reset the corners to none when reusing a `ZSImageView`, such as when using it in a `UITableViewCell`.
 
 How to use in your App
 ---
