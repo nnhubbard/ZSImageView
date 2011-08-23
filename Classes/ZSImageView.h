@@ -8,15 +8,20 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JMImageCache.h"
 
+typedef enum {
+	ZSRoundCornerTopLeft = 1,
+	ZSRoundCornerTopRight = 2,
+	ZSRoundCornerBottomLeft = 4,
+	ZSRoundCornerBottomRight = 8,
+	ZSRoundCornerAll = 16
+} Corners;
+
 @interface ZSImageView : UIView <JMImageCacheDelegate> {
 	NSString *imageUrl;
 	UIImage *image;
 	UIImage *defaultImage;
 	UIImageView *imageView;
-	BOOL topLeft;
-	BOOL topRight;
-	BOOL bottomLeft;
-	BOOL bottomRight;
+	Corners corners;
 	float cornerRadius;
 }
 
@@ -24,10 +29,7 @@
 @property (nonatomic, retain) UIImage *image;
 @property (nonatomic, retain) UIImage *defaultImage;
 @property (nonatomic, retain) UIImageView *imageView;
-@property (nonatomic) BOOL topLeft;
-@property (nonatomic) BOOL topRight;
-@property (nonatomic) BOOL bottomLeft;
-@property (nonatomic) BOOL bottomRight;
+@property (nonatomic) Corners corners;
 @property (nonatomic) float cornerRadius;
 
 

@@ -12,48 +12,25 @@
 @implementation ZSImageViewViewController
 
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
 	[super viewDidLoad];
 	
 	// Create the image view
-	ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 100, 200.0f, 500.0f)] autorelease];
-	imageView.imageUrl = @"http://farm7.static.flickr.com/6067/6059587693_9c39728932_b.jpg";
+	ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(25, 25, 200.0f, 200.0f)] autorelease];
+	imageView.imageUrl = @"http://www.indiaonrent.com/forwards/b/beautiful-mountains/res/593qen.jpg";
 	imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
 	imageView.contentMode = UIViewContentModeScaleAspectFill;
-	imageView.topLeft = YES;
-	imageView.bottomLeft = YES;
+	imageView.corners = ZSRoundCornerTopLeft | ZSRoundCornerBottomLeft | ZSRoundCornerTopRight;
 	imageView.cornerRadius = 15;
 	[self.view addSubview:imageView];
 	
 	// Create the image view
-	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(600, 400, 100.0f, 100.0f)] autorelease];
-	imageView2.imageUrl = @"http://farm7.static.flickr.com/6070/6059589377_48cce910c6_b.jpg";
+	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 300, 100.0f, 100.0f)] autorelease];
+	imageView2.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
 	imageView2.defaultImage = [UIImage imageNamed:@"no-image.png"];
-	imageView2.topLeft = YES;
-	imageView2.topRight = YES;
-	imageView2.bottomLeft = YES;
-	imageView2.bottomRight = YES;
+	imageView2.corners = ZSRoundCornerAll;
 	imageView2.cornerRadius = 10;
 	[self.view addSubview:imageView2];
 	

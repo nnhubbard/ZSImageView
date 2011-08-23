@@ -12,8 +12,9 @@ Create a ZSImageView and set the remote and default image:
 
 ```objective-c
 ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 200.0f)] autorelease];
-imageView.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
+imageView.imageUrl = @"http://www.indiaonrent.com/forwards/b/beautiful-mountains/res/593qen.jpg";
 imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
+imageView.contentMode = UIViewContentModeScaleAspectFill;
 [self.view addSubview:imageView];
 ```
 
@@ -21,13 +22,16 @@ If you want to round two of the edges and give the view a cornerRadius of 10 it 
 
 ```objective-c
 ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 200.0f)] autorelease];
-imageView.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
-imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
-imageView.topLeft = YES;
-imageView.bottomLeft = YES;
-imageView.cornerRadius = 10;
+imageView2.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
+imageView2.defaultImage = [UIImage imageNamed:@"no-image.png"];
+imageView.corners = ZSRoundCornerTopLeft | ZSRoundCornerBottomLeft | ZSRoundCornerTopRight;
+imageView2.cornerRadius = 10;
 [self.view addSubview:imageView];
 ```
+
+Options to Round Edges
+---
+There are five options you can use to round the edges of your `ZSImageView`. `ZSRoundCornerTopLeft`, `ZSRoundCornerTopRight`, `ZSRoundCornerBottomLeft`, `ZSRoundCornerBottomRight`, `ZSRoundCornerAll`. These can be combined to round a few edges or you can use `ZSRoundCornerAll` to round all of the edges.
 
 How to use in your App
 ---

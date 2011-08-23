@@ -10,7 +10,7 @@
 
 @implementation ZSImageView
 
-@synthesize imageUrl, defaultImage, topLeft, topRight, bottomLeft, bottomRight, image, cornerRadius, imageView;
+@synthesize imageUrl, defaultImage, corners, image, cornerRadius, imageView;
 
 #pragma mark -
 #pragma mark Initialization
@@ -92,26 +92,31 @@
 	[self addSubview:imageView];
 	
 	// -- Round the view --
-	UIRectCorner corners = 0;
+	UIRectCorner cornersAdd = 0;
 	
 	// Top Left
-	if (topLeft) {
-		corners |= UIRectCornerTopLeft;
+	if (corners & ZSRoundCornerTopLeft) {
+		cornersAdd |= UIRectCornerTopLeft;
 	}//end
 	
 	// Top Right
-	if (topRight) {
-		corners |= UIRectCornerTopRight;
+	if (corners & ZSRoundCornerTopRight) {
+		cornersAdd |= UIRectCornerTopRight;
 	}//end
 	
 	// Bottom Left
-	if (bottomLeft) {
-		corners |= UIRectCornerBottomLeft;
+	if (corners & ZSRoundCornerBottomLeft) {
+		cornersAdd |= UIRectCornerBottomLeft;
 	}
 	
 	// Bottom Right
-	if (bottomRight) {
-		corners |= UIRectCornerBottomRight;
+	if (corners & ZSRoundCornerBottomRight) {
+		cornersAdd |= UIRectCornerBottomRight;
+	}
+	
+	// All Corners
+	if (corners & ZSRoundCornerAll) {
+		cornersAdd = UIRectCornerAllCorners;
 	}
 	
 	// Corner Radius Default
@@ -122,7 +127,7 @@
 	// Make sure we even have corners to change
 	if (corners != 0) {
 		// Create the mask
-		UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+		UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:cornersAdd cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
 		CAShapeLayer *maskLayer = [CAShapeLayer layer];
 		maskLayer.frame = self.bounds;
 		maskLayer.path = maskPath.CGPath;
