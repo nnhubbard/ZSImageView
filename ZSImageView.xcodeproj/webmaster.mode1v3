@@ -275,7 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
+									<integer>4</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -318,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZSImageViewViewController.m</string>
+								<string>ZSImageView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ZSImageViewViewController.m</string>
+										<string>ZSImageView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>45F524E71404052A003943D9</string>
+										<string>45F5251314040F77003943D9</string>
 										<key>history</key>
 										<array>
 											<string>458745D713FF00F80037F7ED</string>
@@ -342,9 +343,9 @@
 											<string>45F524DC1404038A003943D9</string>
 											<string>45F524DD1404038A003943D9</string>
 											<string>45F524E1140403BE003943D9</string>
-											<string>45F524E31404046B003943D9</string>
-											<string>45F524E41404046B003943D9</string>
-											<string>45F524E51404046B003943D9</string>
+											<string>45F524F814040D5D003943D9</string>
+											<string>45F5251114040F77003943D9</string>
+											<string>45F5251214040F77003943D9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -402,9 +403,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>45F524AD140401C2003943D9</string>
+				<string>45F5251414040F77003943D9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>45F524AE140401C2003943D9</string>
+				<string>45F5251514040F77003943D9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -564,14 +565,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZSImageView.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -627,7 +626,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>45F9C8EE13FB38860087322F</string>
-				<string>45F524A6140401B7003943D9</string>
+				<string>45F5251614040F77003943D9</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -749,13 +748,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>45F524AF140401C2003943D9</string>
+				<string>45F5251714040F77003943D9</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>45F524B0140401C2003943D9</string>
-				<string>45F524B1140401C2003943D9</string>
-				<string>45F524B2140401C2003943D9</string>
-				<string>45F524B3140401C2003943D9</string>
-				<string>45F524B4140401C2003943D9</string>
+				<string>45F5251814040F77003943D9</string>
+				<string>45F5251914040F77003943D9</string>
+				<string>45F5251A14040F77003943D9</string>
+				<string>45F5251B14040F77003943D9</string>
+				<string>45F5251C14040F77003943D9</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -917,7 +916,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>45F524B5140401C2003943D9</string>
+				<string>45F5251D14040F77003943D9</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

@@ -13,7 +13,8 @@ typedef enum {
 	ZSRoundCornerTopRight = 2,
 	ZSRoundCornerBottomLeft = 4,
 	ZSRoundCornerBottomRight = 8,
-	ZSRoundCornerAll = 16
+	ZSRoundCornerAll = 16,
+	ZSRoundCornerNone = 32
 } Corners;
 
 @interface ZSImageView : UIView <JMImageCacheDelegate> {

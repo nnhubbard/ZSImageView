@@ -79,7 +79,7 @@
 			} else {
 				tmp.image = nil;
 			}//end
-
+			
 		}//end
 		
 	} else {
@@ -119,13 +119,18 @@
 		cornersAdd = UIRectCornerAllCorners;
 	}
 	
+	// Reset corners?
+	if (corners & ZSRoundCornerNone) {
+		cornersAdd = 0;
+	}
+	
 	// Corner Radius Default
 	if (!cornerRadius) {
 		self.cornerRadius = 10;
 	}
 	
 	// Make sure we even have corners to change
-	if (corners != 0) {
+	if (cornersAdd != 0) {
 		// Create the mask
 		UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:cornersAdd cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
 		CAShapeLayer *maskLayer = [CAShapeLayer layer];
