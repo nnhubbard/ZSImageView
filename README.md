@@ -48,7 +48,7 @@ There are five options you can use to round the edges of your `ZSImageView`. `ZS
 
 Borders
 ---
-The great thing about using `ZSImageView` is that you can choose to only add a few borders if you would like. There are five options for this, `ZSBorderTop`, `ZSBorderRight`, `ZSBorderBottom`, and `ZSBorderLeft`. There is also `ZSBorderNone` if you need to reset them when using cell reuse. There are defaults for `borderWidth` and `borderColor` but obviously you can set those as well.
+The great thing about using `ZSImageView` is that you can choose to only add a few borders if you would like. There are five options for this, `ZSBorderTop`, `ZSBorderRight`, `ZSBorderBottom`, `ZSBorderLeft`, and `ZSBorderAll`. There is also `ZSBorderNone` if you need to reset them when using cell reuse. There are defaults for `borderWidth` and `borderColor` but obviously you can set those as well.
 
 How to use in your App
 ---
