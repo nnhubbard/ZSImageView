@@ -10,7 +10,7 @@
 
 @implementation ZSImageView
 
-@synthesize imageUrl, defaultImage, corners, image, cornerRadius, imageView;
+@synthesize imageUrl, defaultImage, corners, image, cornerRadius, imageView, borders, borderColor, borderWidth;
 
 #pragma mark -
 #pragma mark Initialization
@@ -90,6 +90,16 @@
 	self.imageView = tmp;
 	[tmp release];
 	[self addSubview:imageView];
+	
+	// Borders
+	if (borders) {
+		ZSLineView *line = [[ZSLineView alloc] initWithFrame:rect];
+		line.borders = borders;
+		line.borderColor = borderColor;
+		line.borderWidth = borderWidth;
+		[self addSubview:line];
+		[line release];
+	}//end
 	
 	// -- Round the view --
 	UIRectCorner cornersAdd = 0;
@@ -174,6 +184,7 @@
 	[defaultImage release];
 	[image release];
 	[imageView release];
+	[borderColor release];
     [super dealloc];
 }//end
 

@@ -23,16 +23,29 @@
 	imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
 	imageView.contentMode = UIViewContentModeScaleAspectFill;
 	imageView.corners = ZSRoundCornerTopLeft | ZSRoundCornerBottomLeft | ZSRoundCornerTopRight;
+	imageView.clipsToBounds = YES;
 	imageView.cornerRadius = 15;
 	[self.view addSubview:imageView];
 	
+	
 	// Create the image view
-	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(100, 300, 100.0f, 100.0f)] autorelease];
+	ZSImageView *imageView2 = [[[ZSImageView alloc] initWithFrame:CGRectMake(25, 300, 100.0f, 100.0f)] autorelease];
 	imageView2.imageUrl = @"http://www.desktopwallpaperhd.com/wallpapers/3/4501.jpg";
 	imageView2.defaultImage = [UIImage imageNamed:@"no-image.png"];
 	imageView2.corners = ZSRoundCornerAll;
 	imageView2.cornerRadius = 10;
 	[self.view addSubview:imageView2];
+	
+	// Create the image view
+	ZSImageView *imageView3 = [[[ZSImageView alloc] initWithFrame:CGRectMake(140, 300, 100.0f, 100.0f)] autorelease];
+	imageView3.imageUrl = @"http://www.taramtamtam.com/wallpapers/Sport/M/Mountain_biking/images/Mountain_biking_3.jpg";
+	imageView3.defaultImage = [UIImage imageNamed:@"no-image.png"];
+	imageView3.contentMode = UIViewContentModeScaleAspectFill;
+	imageView3.borders = ZSBorderRight | ZSBorderLeft | ZSBorderTop;
+	imageView3.borderWidth = 3.0;
+	imageView3.borderColor = [UIColor redColor];
+	imageView3.clipsToBounds = YES;
+	[self.view addSubview:imageView3];
 	
 }//end
 

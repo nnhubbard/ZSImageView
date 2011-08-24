@@ -6,6 +6,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import "ZSLineView.h"
 #import "JMImageCache.h"
 
 typedef enum {
@@ -22,16 +23,22 @@ typedef enum {
 	UIImage *image;
 	UIImage *defaultImage;
 	UIImageView *imageView;
+	UIColor *borderColor;
 	Corners corners;
+	Borders borders;
 	float cornerRadius;
+	CGFloat borderWidth;
 }
 
 @property (nonatomic, retain) NSString *imageUrl;
 @property (nonatomic, retain) UIImage *image;
 @property (nonatomic, retain) UIImage *defaultImage;
 @property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UIColor *borderColor;
 @property (nonatomic) Corners corners;
+@property (nonatomic) Borders borders;
 @property (nonatomic) float cornerRadius;
+@property (nonatomic) CGFloat borderWidth;
 
 
 @end
