@@ -5,6 +5,8 @@ This is a replacement for UIImageView. Unlike UIImageView, ZSImageView supports 
 as well as providing a default image while the remote image is loading.  You can also round any of the
 edges individually and set the cornerRadius.
 
+![ZSImageView](http://f.cl.ly/items/0i1b0V0Q0q3e0l0C0204/screen-shot.jpg "ZSImageView")
+
 How It Works
 ---
 
