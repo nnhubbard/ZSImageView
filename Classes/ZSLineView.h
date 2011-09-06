@@ -17,14 +17,27 @@ typedef enum {
 	ZSBorderNone = 32
 } Borders;
 
+typedef enum {
+	ZSRoundCornerTopLeft = 1,
+	ZSRoundCornerTopRight = 2,
+	ZSRoundCornerBottomLeft = 4,
+	ZSRoundCornerBottomRight = 8,
+	ZSRoundCornerAll = 16,
+	ZSRoundCornerNone = 32
+} Corners;
+
 @interface ZSLineView : UIView {
 	Borders borders;
+	Corners corners;
 	UIColor *borderColor;
 	CGFloat borderWidth;
+	float cornerRadius;
 }
 
 @property (nonatomic) Borders borders;
+@property (nonatomic) Corners corners;
 @property (nonatomic, retain) UIColor *borderColor;
 @property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) float cornerRadius;
 
 @end

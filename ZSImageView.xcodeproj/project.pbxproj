@@ -14,9 +14,6 @@
 		234DD7771415A13100319124 /* Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 234DD7761415A13100319124 /* Border.m */; };
 		234DD7A61415A90F00319124 /* BorderRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = 234DD7A51415A90F00319124 /* BorderRounded.m */; };
 		2399274C1413BE63007FEE36 /* Rounded.m in Sources */ = {isa = PBXBuildFile; fileRef = 2399274B1413BE63007FEE36 /* Rounded.m */; };
-		23D00E931405EF23002CFD00 /* ZSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D00E8E1405EF23002CFD00 /* ZSImageView.m */; };
-		23D00E941405EF23002CFD00 /* ZSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D00E901405EF23002CFD00 /* ZSLineView.m */; };
-		23D00E951405EF23002CFD00 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D00E921405EF23002CFD00 /* JMImageCache.m */; };
 		23D00E9B1405EF94002CFD00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D00E9A1405EF94002CFD00 /* QuartzCore.framework */; };
 		23DDF0B714081F8D004790D4 /* TableViewStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDF0B614081F8D004790D4 /* TableViewStandard.m */; };
 		23DDF0BB14081FED004790D4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDF0BA14081FED004790D4 /* Item.m */; };
@@ -28,6 +25,9 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		45F193DD14166F46009BAC65 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F193D814166F46009BAC65 /* JMImageCache.m */; };
+		45F193DE14166F46009BAC65 /* ZSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F193DA14166F46009BAC65 /* ZSImageView.m */; };
+		45F193DF14166F46009BAC65 /* ZSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F193DC14166F46009BAC65 /* ZSLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,6 @@
 		234DD7A51415A90F00319124 /* BorderRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderRounded.m; sourceTree = "<group>"; };
 		2399274A1413BE63007FEE36 /* Rounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rounded.h; sourceTree = "<group>"; };
 		2399274B1413BE63007FEE36 /* Rounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rounded.m; sourceTree = "<group>"; };
-		23D00E8D1405EF23002CFD00 /* ZSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSImageView.h; sourceTree = "<group>"; };
-		23D00E8E1405EF23002CFD00 /* ZSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSImageView.m; sourceTree = "<group>"; };
-		23D00E8F1405EF23002CFD00 /* ZSLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLineView.h; sourceTree = "<group>"; };
-		23D00E901405EF23002CFD00 /* ZSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLineView.m; sourceTree = "<group>"; };
-		23D00E911405EF23002CFD00 /* JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMImageCache.h; sourceTree = "<group>"; };
-		23D00E921405EF23002CFD00 /* JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMImageCache.m; sourceTree = "<group>"; };
 		23D00E9A1405EF94002CFD00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		23DDF0B514081F8D004790D4 /* TableViewStandard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewStandard.h; sourceTree = "<group>"; };
 		23DDF0B614081F8D004790D4 /* TableViewStandard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewStandard.m; sourceTree = "<group>"; };
@@ -66,6 +60,12 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45F193D714166F46009BAC65 /* JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMImageCache.h; path = Classes/JMImageCache.h; sourceTree = "<group>"; };
+		45F193D814166F46009BAC65 /* JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMImageCache.m; path = Classes/JMImageCache.m; sourceTree = "<group>"; };
+		45F193D914166F46009BAC65 /* ZSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSImageView.h; path = Classes/ZSImageView.h; sourceTree = "<group>"; };
+		45F193DA14166F46009BAC65 /* ZSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSImageView.m; path = Classes/ZSImageView.m; sourceTree = "<group>"; };
+		45F193DB14166F46009BAC65 /* ZSLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSLineView.h; path = Classes/ZSLineView.h; sourceTree = "<group>"; };
+		45F193DC14166F46009BAC65 /* ZSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSLineView.m; path = Classes/ZSLineView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ZSImageView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZSImageView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,12 +108,12 @@
 		23D00E8C1405EF23002CFD00 /* ZSImageView */ = {
 			isa = PBXGroup;
 			children = (
-				23D00E8D1405EF23002CFD00 /* ZSImageView.h */,
-				23D00E8E1405EF23002CFD00 /* ZSImageView.m */,
-				23D00E8F1405EF23002CFD00 /* ZSLineView.h */,
-				23D00E901405EF23002CFD00 /* ZSLineView.m */,
-				23D00E911405EF23002CFD00 /* JMImageCache.h */,
-				23D00E921405EF23002CFD00 /* JMImageCache.m */,
+				45F193D714166F46009BAC65 /* JMImageCache.h */,
+				45F193D814166F46009BAC65 /* JMImageCache.m */,
+				45F193D914166F46009BAC65 /* ZSImageView.h */,
+				45F193DA14166F46009BAC65 /* ZSImageView.m */,
+				45F193DB14166F46009BAC65 /* ZSLineView.h */,
+				45F193DC14166F46009BAC65 /* ZSLineView.m */,
 			);
 			name = ZSImageView;
 			sourceTree = "<group>";
@@ -258,9 +258,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ZSImageViewAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
-				23D00E931405EF23002CFD00 /* ZSImageView.m in Sources */,
-				23D00E941405EF23002CFD00 /* ZSLineView.m in Sources */,
-				23D00E951405EF23002CFD00 /* JMImageCache.m in Sources */,
 				23DDF0B714081F8D004790D4 /* TableViewStandard.m in Sources */,
 				23DDF0BB14081FED004790D4 /* Item.m in Sources */,
 				23DDF0C814082219004790D4 /* TableViewGrouped.m in Sources */,
@@ -268,6 +265,9 @@
 				2399274C1413BE63007FEE36 /* Rounded.m in Sources */,
 				234DD7771415A13100319124 /* Border.m in Sources */,
 				234DD7A61415A90F00319124 /* BorderRounded.m in Sources */,
+				45F193DD14166F46009BAC65 /* JMImageCache.m in Sources */,
+				45F193DE14166F46009BAC65 /* ZSImageView.m in Sources */,
+				45F193DF14166F46009BAC65 /* ZSLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

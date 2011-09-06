@@ -49,7 +49,7 @@
 	
 	item = [[Item alloc] init];
 	item.title = @"Image 2";
-	item.imageURL = @"http://www.caturineodorremoval.info/wp-content/uploads/2011/08/Cat-Urine-Odor-Removal.jpg";
+	item.imageURL = @"http://indianahumanities.net/wp-content/uploads/2011/08/cat2.jpg";
 	[tempItems addObject:item];
 	
 	item = [[Item alloc] init];
@@ -149,7 +149,7 @@
 		imageView.defaultImage = [UIImage imageNamed:@"no-image.png"];
 		imageView.imageUrl = item.imageURL;
 		imageView.contentMode = UIViewContentModeScaleAspectFill;
-		//imageView.clipsToBounds = YES;
+		imageView.clipsToBounds = YES;
 		imageView.tag = 221;
 		imageView.cornerRadius = 10;
 		imageView.borderWidth = 2.0;

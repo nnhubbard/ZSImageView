@@ -11,9 +11,14 @@
 
 @implementation ZSLineView
 
-@synthesize borders, borderColor, borderWidth;
+@synthesize borders, corners, borderColor, borderWidth, cornerRadius;
 
 
+/**
+ * Init the frame
+ *
+ * @version $Revision: 0.1
+ */
 - (id)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
@@ -22,11 +27,14 @@
 		self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
     }
     return self;
-}
+}//end
 
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+/**
+ * Drawing
+ *
+ * @version $Revision: 0.1
+ */
 - (void)drawRect:(CGRect)rect {
 	
 	// Stop is we are not using any borders
@@ -48,9 +56,16 @@
    
 	// Left
 	if (borders & ZSBorderLeft) {
-		CGContextMoveToPoint(ctx, 0, 0);
-		CGContextAddLineToPoint(ctx, 0,rect.size.height);
-		CGContextStrokePath(ctx);
+		if ((corners & ZSRoundCornerTopLeft) && (corners & ZSRoundCornerBottomLeft) || corners & ZSRoundCornerAll) {
+			CGContextMoveToPoint(ctx, 0, 0);
+			//CGContextAddCurveToPoint(ctx, rect.size.height - (cornerRadius/2), rect.size.width - (cornerRadius/2), rect.size.width - (cornerRadius/2), rect.size.height - (cornerRadius/2), 20, 20);
+			CGContextAddLineToPoint(ctx, 0,rect.size.height);
+			CGContextStrokePath(ctx);
+		} else {
+			CGContextMoveToPoint(ctx, 0, 0);
+			CGContextAddLineToPoint(ctx, 0,rect.size.height);
+			CGContextStrokePath(ctx);
+		}//end
 	}
 	
 	// Right
@@ -77,10 +92,15 @@
 }//end
 
 
+/**
+ * Dealloc
+ *
+ * @version $Revision: 0.1
+ */
 - (void)dealloc {
 	[borderColor release];
     [super dealloc];
-}
+}//end
 
 
 @end

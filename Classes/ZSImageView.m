@@ -10,7 +10,7 @@
 
 @implementation ZSImageView
 
-@synthesize imageUrl, defaultImage, corners, image, cornerRadius, imageView, borders, borderColor, borderWidth;
+@synthesize imageUrl, defaultImage, corners, image, cornerRadius, imageView, borders, borderColor, borderWidth, downloadedImage;
 
 #pragma mark -
 #pragma mark Initialization
@@ -25,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code.
+		self.opaque = YES;
 		
     }
     return self;
@@ -39,29 +40,27 @@
 - (void)setImageUrl:(NSString *)url {
 	[imageUrl release];
 	imageUrl = [url retain];
-	
-	[self setNeedsDisplay];
-	
+	//[self setNeedsDisplay];
 }//end
 
 
-#pragma mark -
-#pragma mark Drawing
-
 /**
- * Draw the image
+ * Layout our subviews
  *
  * @version $Revision: 0.1
  */
-- (void)drawRect:(CGRect)rect {
-    
+- (void)layoutSubviews {
+	
+	// Size
+	CGRect size = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+	
 	// Can we continue?
 	if (!imageUrl && !defaultImage) {
 		return;
 	}
 	
 	// Draw ImageView
-	UIImageView *tmp = [[UIImageView alloc] initWithFrame:rect];
+	UIImageView *tmp = [[[UIImageView alloc] initWithFrame:size] autorelease];
 	
 	// Make sure we have a remote url
 	if (imageUrl && [imageUrl length] > 0) {
@@ -74,6 +73,16 @@
 			tmp.image = temp;
 		} else {
 			
+			// Start the counter and start network activity
+			UIApplication* app = [UIApplication sharedApplication];
+			app.networkActivityIndicatorVisible = YES;
+			
+			// Save the count
+			NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+			count = [prefs integerForKey:@"ZSLoadedCount"] + 1;
+			[prefs setInteger:count forKey:@"ZSLoadedCount"];
+		
+			// Use default image?
 			if (defaultImage) {
 				tmp.image = defaultImage;
 			} else {
@@ -86,15 +95,19 @@
 		tmp.image = defaultImage;
 	}//end
 	
+	// Set the content mode and image
 	tmp.contentMode = self.contentMode;
 	self.imageView = tmp;
-	[tmp release];
+	
+	// Add to subview
 	[self addSubview:imageView];
 	
 	// Borders
 	if (borders) {
-		ZSLineView *line = [[ZSLineView alloc] initWithFrame:rect];
+		ZSLineView *line = [[ZSLineView alloc] initWithFrame:size];
 		line.borders = borders;
+		line.corners = corners;
+		line.cornerRadius = cornerRadius;
 		line.borderColor = borderColor;
 		line.borderWidth = borderWidth;
 		[self addSubview:line];
@@ -163,10 +176,31 @@
  * @version $Revision: 0.1
  */
 - (void)cache:(JMImageCache *)cache didDownloadImage:(UIImage *)img forURL:(NSString *)url {
+	
+	// Make sure we are using the correct image
 	if ([url isEqualToString:imageUrl]) {
 		self.imageView.image = img;
-		[self setNeedsDisplay];
-	}
+		self.downloadedImage = img;
+		//[self setNeedsDisplay];
+		
+		// This generally means that we have no connection
+		// Use default image
+		if (!img) {
+			NSLog(@"No connection, no image");
+			self.imageView.image = defaultImage;
+		}
+		
+		// Stop counter
+		NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+		count = [prefs integerForKey:@"ZSLoadedCount"] - 1;
+		[prefs setInteger:count forKey:@"ZSLoadedCount"];
+		NSLog(@"Count: %i", count);
+		if (count == 0) {
+			UIApplication* app = [UIApplication sharedApplication];
+			app.networkActivityIndicatorVisible = NO;
+		}//end
+		
+	}//end
 	
 }//end
 
@@ -185,6 +219,7 @@
 	[image release];
 	[imageView release];
 	[borderColor release];
+	[downloadedImage release];
     [super dealloc];
 }//end
 
