@@ -1,8 +1,14 @@
 //
 // Prefix header for all source files of the 'ZSImageView' target in the 'ZSImageView' project
 //
+#import <Availability.h>
 
-#define ZSRelease(x) [x release], x = nil
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>

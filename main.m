@@ -2,7 +2,7 @@
 //  main.m
 //  ZSImageView
 //
-//  Created by Nicholas Hubbard on 8/16/11.
+//  Created by Nicholas Hubbard on 8/24/11.
 //  Copyright 2011 Zed Said Studio. All rights reserved.
 //
 
