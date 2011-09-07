@@ -115,7 +115,6 @@ JMImageCache *_sharedCache = nil;
 #pragma mark Setter Methods
 
 - (void) setImage:(UIImage *)i forURL:(NSString *)url {
-	// Fix so we don't crash when there is no connection
 	if (i) {
 		[super setObject:i forKey:url];
 	}

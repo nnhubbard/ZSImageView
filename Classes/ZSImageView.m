@@ -40,67 +40,76 @@
 - (void)setImageUrl:(NSString *)url {
 	[imageUrl release];
 	imageUrl = [url retain];
-	//[self setNeedsDisplay];
+	if (imageView) {
+		[self performSelector:@selector(updateImageForUrl:) withObject:url];
+	}
 }//end
 
 
 /**
- * Layout our subviews
+ * Update image and view
  *
  * @version $Revision: 0.1
  */
-- (void)layoutSubviews {
-	
-	// Size
-	CGRect size = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+- (void)updateImageForUrl:(NSString *)url {
 	
 	// Can we continue?
 	if (!imageUrl && !defaultImage) {
 		return;
 	}
 	
-	// Draw ImageView
-	UIImageView *tmp = [[[UIImageView alloc] initWithFrame:size] autorelease];
+	// Size
+	CGRect size = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+	
+	// Our image
+	UIImage *temp = [[JMImageCache sharedCache] imageForURL:imageUrl delegate:self];
 	
 	// Make sure we have a remote url
 	if (imageUrl && [imageUrl length] > 0) {
 		
-		// Set the image view
-		UIImage *temp = [[JMImageCache sharedCache] imageForURL:imageUrl delegate:self];
-		
 		// See if we recieved an image yet, if not use default
 		if (temp) {
-			tmp.image = temp;
+			self.imageView.image = temp;
 		} else {
 			
-			// Start the counter and start network activity
-			UIApplication* app = [UIApplication sharedApplication];
-			app.networkActivityIndicatorVisible = YES;
-			
-			// Save the count
-			NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-			count = [prefs integerForKey:@"ZSLoadedCount"] + 1;
-			[prefs setInteger:count forKey:@"ZSLoadedCount"];
-		
 			// Use default image?
 			if (defaultImage) {
-				tmp.image = defaultImage;
+				
+				self.imageView.image = defaultImage;
 			} else {
-				tmp.image = nil;
+				self.imageView.image = nil;
 			}//end
 			
 		}//end
 		
 	} else {
-		tmp.image = defaultImage;
+		self.imageView.image = defaultImage;
 	}//end
 	
 	// Set the content mode and image
-	tmp.contentMode = self.contentMode;
-	self.imageView = tmp;
+	self.imageView.contentMode = self.contentMode;
 	
-	// Add to subview
-	[self addSubview:imageView];
+	// If we already have an image view we still need to set the image
+	if (imageView) {
+		
+		if (temp) {
+			self.imageView.image = temp;
+		} else {
+			self.imageView.image = defaultImage;
+		}
+		
+	}//end
+	
+	// Start the counter and start network activity
+	/*
+	 UIApplication* app = [UIApplication sharedApplication];
+	 app.networkActivityIndicatorVisible = YES;
+	 
+	 // Save the count
+	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	 count = [prefs integerForKey:@"ZSLoadedCount"] + 1;
+	 [prefs setInteger:count forKey:@"ZSLoadedCount"];
+	 */
 	
 	// Borders
 	if (borders) {
@@ -164,6 +173,29 @@
 		self.layer.mask = nil;
 	}//end
 	
+}
+
+
+/**
+ * Layout our subviews
+ *
+ * @version $Revision: 0.1
+ */
+- (void)layoutSubviews {
+	
+	// Size
+	CGRect size = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+	
+	// Draw ImageView
+	if (!imageView) {
+		UIImageView *tmp = [[[UIImageView alloc] initWithFrame:size] autorelease];
+		self.imageView = tmp;
+		[self addSubview:imageView];
+	}
+	
+	// Update images
+	[self performSelector:@selector(updateImageForUrl:) withObject:imageUrl];
+	
 }//end
 
 
@@ -181,24 +213,24 @@
 	if ([url isEqualToString:imageUrl]) {
 		self.imageView.image = img;
 		self.downloadedImage = img;
-		//[self setNeedsDisplay];
 		
 		// This generally means that we have no connection
 		// Use default image
-		if (!img) {
-			NSLog(@"No connection, no image");
+		if (!img || !url) {
 			self.imageView.image = defaultImage;
 		}
 		
 		// Stop counter
-		NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-		count = [prefs integerForKey:@"ZSLoadedCount"] - 1;
-		[prefs setInteger:count forKey:@"ZSLoadedCount"];
-		NSLog(@"Count: %i", count);
-		if (count == 0) {
-			UIApplication* app = [UIApplication sharedApplication];
-			app.networkActivityIndicatorVisible = NO;
-		}//end
+		/*
+		 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+		 count = [prefs integerForKey:@"ZSLoadedCount"] - 1;
+		 [prefs setInteger:count forKey:@"ZSLoadedCount"];
+		 NSLog(@"Count: %i", count);
+		 if (count == 0) {
+		 UIApplication* app = [UIApplication sharedApplication];
+		 app.networkActivityIndicatorVisible = NO;
+		 }//end
+		 */
 		
 	}//end
 	
