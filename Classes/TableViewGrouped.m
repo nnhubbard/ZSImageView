@@ -44,27 +44,52 @@
 	// Create
 	item = [[Item alloc] init];
 	item.title = @"Image 1";
-	item.imageURL = @"http://www.ladygagapic.info/wallpaper/cat-9.jpg";
+	item.imageURL = @"http://farm7.static.flickr.com/6077/6121848007_ee8659cb83_m.jpg";
 	[tempItems addObject:item];
 	
 	item = [[Item alloc] init];
 	item.title = @"Image 2";
-	item.imageURL = @"http://indianahumanities.net/wp-content/uploads/2011/08/cat2.jpg";
+	item.imageURL = @"http://farm7.static.flickr.com/6090/6121848009_fa6888ac52_m.jpg";
 	[tempItems addObject:item];
 	
 	item = [[Item alloc] init];
 	item.title = @"Image 3";
-	item.imageURL = @"http://cooltickling.com/wp-content/uploads/2010/12/cat1.jpg";
+	item.imageURL = @"http://farm7.static.flickr.com/6081/6122391672_2f5ee14674_m.jpg";
 	[tempItems addObject:item];
 	
 	item = [[Item alloc] init];
 	item.title = @"Image 4";
-	item.imageURL = @"http://media3.onsugar.com/files/2011/06/26/4/1798/17983806/image_28.jpg";
+	item.imageURL = @"http://farm7.static.flickr.com/6184/6122391688_93cc14e993_m.jpg";
 	[tempItems addObject:item];
 	
 	item = [[Item alloc] init];
 	item.title = @"Image 5";
-	item.imageURL = @"http://variouspictures.tk/wp-content/uploads/2011/07/Cat16.jpg";
+	item.imageURL = @"http://farm7.static.flickr.com/6185/6122391696_d1aa96b292_m.jpg";
+	[tempItems addObject:item];
+	
+	item = [[Item alloc] init];
+	item.title = @"Image 6";
+	item.imageURL = @"http://farm7.static.flickr.com/6183/6121847971_b8c879081c_m.jpg";
+	[tempItems addObject:item];
+	
+	item = [[Item alloc] init];
+	item.title = @"Image 7";
+	item.imageURL = @"http://farm7.static.flickr.com/6075/6121847985_c7061a3613_m.jpg";
+	[tempItems addObject:item];
+	
+	item = [[Item alloc] init];
+	item.title = @"Image 8";
+	item.imageURL = @"http://farm7.static.flickr.com/6183/6121847997_368ddea3ac_m.jpg";
+	[tempItems addObject:item];
+	
+	item = [[Item alloc] init];
+	item.title = @"Image 9";
+	item.imageURL = @"http://farm7.static.flickr.com/6061/6122391660_51ebf2399c_m.jpg";
+	[tempItems addObject:item];
+	
+	item = [[Item alloc] init];
+	item.title = @"Image 10";
+	item.imageURL = @"http://farm7.static.flickr.com/6065/6122391668_7f50744f40_m.jpg";
 	[tempItems addObject:item];
 	
 	self.items = [NSArray arrayWithArray:tempItems];
