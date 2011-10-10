@@ -100,17 +100,6 @@
 		
 	}//end
 	
-	// Start the counter and start network activity
-	/*
-	 UIApplication* app = [UIApplication sharedApplication];
-	 app.networkActivityIndicatorVisible = YES;
-	 
-	 // Save the count
-	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-	 count = [prefs integerForKey:@"ZSLoadedCount"] + 1;
-	 [prefs setInteger:count forKey:@"ZSLoadedCount"];
-	 */
-	
 	// Borders
 	if (borders) {
 		ZSLineView *line = [[ZSLineView alloc] initWithFrame:size];
@@ -219,18 +208,6 @@
 		if (!img || !url) {
 			self.imageView.image = defaultImage;
 		}
-		
-		// Stop counter
-		/*
-		 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-		 count = [prefs integerForKey:@"ZSLoadedCount"] - 1;
-		 [prefs setInteger:count forKey:@"ZSLoadedCount"];
-		 NSLog(@"Count: %i", count);
-		 if (count == 0) {
-		 UIApplication* app = [UIApplication sharedApplication];
-		 app.networkActivityIndicatorVisible = NO;
-		 }//end
-		 */
 		
 	}//end
 	

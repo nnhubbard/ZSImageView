@@ -299,7 +299,7 @@
 							<real>229</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1920 231 1280 969 1920 176 1280 1024 </string>
+						<string>2200 149 1280 969 1920 42 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4524ABD61416F70E00032EA4</string>
+										<string>45C4186E1423AF4F00D8A340</string>
 										<key>history</key>
 										<array>
 											<string>45F193E814166FF7009BAC65</string>
@@ -338,7 +338,7 @@
 											<string>45B92C3F1416F1290091839C</string>
 											<string>4524ABD31416F70E00032EA4</string>
 											<string>4524ABD41416F70E00032EA4</string>
-											<string>4524ABD51416F70E00032EA4</string>
+											<string>45C4186D1423AF4F00D8A340</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -352,7 +352,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1029, 923}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1920 231 1280 969 1920 176 1280 1024 </string>
+								<string>2200 149 1280 969 1920 42 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -372,7 +372,7 @@
 								<key>Frame</key>
 								<string>{{0, 928}, {1029, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1920 231 1280 969 1920 176 1280 1024 </string>
+								<string>2200 149 1280 969 1920 42 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -396,9 +396,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4524ABCE1416F61800032EA4</string>
+				<string>45C4186F1423AF4F00D8A340</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4524ABCF1416F61800032EA4</string>
+				<string>45C418701423AF4F00D8A340</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -536,13 +536,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>45F193CA14166F1C009BAC65</string>
-		<string>/Users/webmaster/Dropbox/iPhone-Development/Official-Projects/ZSImageView/ZSImageView.xcodeproj</string>
+		<string>/Users/webmaster/dropbox/iphone-development/Official-Projects/ZSImageView/ZSImageView.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1920 231 1280 969 1920 176 1280 1024 </string>
+	<string>2200 149 1280 969 1920 42 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -619,7 +617,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>45F193CA14166F1C009BAC65</string>
-				<string>4524ABD01416F61800032EA4</string>
+				<string>45C418711423AF4F00D8A340</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

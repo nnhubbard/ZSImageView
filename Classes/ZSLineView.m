@@ -56,7 +56,7 @@
    
 	// Left
 	if (borders & ZSBorderLeft) {
-		if ((corners & ZSRoundCornerTopLeft) && (corners & ZSRoundCornerBottomLeft) || corners & ZSRoundCornerAll) {
+		if (((corners & ZSRoundCornerTopLeft) && (corners & ZSRoundCornerBottomLeft)) || corners & ZSRoundCornerAll) {
 			CGContextMoveToPoint(ctx, 0, 0);
 			//CGContextAddCurveToPoint(ctx, rect.size.height - (cornerRadius/2), rect.size.width - (cornerRadius/2), rect.size.width - (cornerRadius/2), rect.size.height - (cornerRadius/2), 20, 20);
 			CGContextAddLineToPoint(ctx, 0,rect.size.height);
